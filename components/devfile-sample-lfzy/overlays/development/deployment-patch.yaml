@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lfzy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0037-tenant/tkrw-pr712-0075-0037-app/devfile-sample-lfzy@sha256:bcb28fcf577a8469c4283b249e079bfb860efc2aa626b9b0fcddee0a57c49c70
+        name: my-nodejs
+        resources: {}
+status: {}
